@@ -12,13 +12,13 @@ class Truck extends Vehicle implements AbleToTow {
   // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[]), towingCapacity (number)
   vin: string;
   color: string;
-  make: string;
-  model: string;
-  year: number;
+  make?: string;
+  model?: string;
+  year?: number;
   weight: number;
   topSpeed: number;
   wheels: Wheel[];
-  towCapacity: number;
+  towingCapacity: number;
 
 
   // TODO: Create a constructor that accepts the properties of the Truck class
@@ -34,14 +34,14 @@ class Truck extends Vehicle implements AbleToTow {
     weight: number,
     topSpeed: number,
     wheels: Wheel[],
-    towCapacity: number
+    towingCapacity: number
 
-  ) { super(make, model, year);
+  ) { super();
         this.vin = vin;
         this.color = color;
         this.weight = weight;
         this.topSpeed = topSpeed;
-        this.towCapacity = towCapacity;
+        this.towingCapacity = towingCapacity;
 
         this.wheels = wheels.length === 4 ? wheels : [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
 
@@ -55,7 +55,7 @@ class Truck extends Vehicle implements AbleToTow {
     if ('make' in vehicle && 'model' in vehicle) {
       const { make, model, weight } = vehicle;
 
-      if (weight <= this.towCapactity) {
+      if (weight <= this.towingCapacity) {
         console.log(`${vehicle} is being towed`);
       } else {
         console.log(`${vehicle} is too heavy to be towed`);
@@ -73,7 +73,7 @@ class Truck extends Vehicle implements AbleToTow {
         console.log(`Color: ${this.color}`);
         console.log(`Weight: ${this.weight}`);
         console.log(`Top Speed: ${this.topSpeed}`);
-        console.log(`Towing Capcity: ${this.towCapacity}`);
+        console.log(`Towing Capcity: ${this.towingCapacity}`);
         console.log(`Wheels: ${this.wheels.length}`);
     } 
 }

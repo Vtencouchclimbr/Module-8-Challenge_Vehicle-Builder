@@ -411,7 +411,7 @@ class Cli {
             (vehicle) => vehicle.vin === this.selectedVehicleVin
           ) as Motorbike;
           if (selectedVehicle) {
-            selectedVehicle.performWheelie();
+            selectedVehicle.wheelie();
           }
         }
         // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.

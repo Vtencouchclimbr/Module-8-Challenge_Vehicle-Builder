@@ -9,9 +9,9 @@ class Motorbike extends Vehicle {
   // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[])
   vin: string;
   color: string;
-  make: string;
-  model: string;
-  year: number;
+  make?: string;
+  model?: string;
+  year?: number;
   weight: number;
   topSpeed: number;
   wheels: Wheel[];
@@ -30,7 +30,7 @@ class Motorbike extends Vehicle {
       topSpeed: number,
       wheels: Wheel[],
   
-    ) { super(make, model, year);
+    ) { super();
           this.vin = vin;
           this.color = color;
           this.weight = weight;
@@ -54,7 +54,7 @@ class Motorbike extends Vehicle {
     console.log(`Weight: ${this.weight}`);
     console.log(`Top Speed: ${this.topSpeed}`);
     console.log(`Wheels: ${this.wheels.length}`);
-} 
+  } 
 }
 
 // Export the Motorbike class as the default export
