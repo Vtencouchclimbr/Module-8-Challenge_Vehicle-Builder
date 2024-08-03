@@ -33,6 +33,9 @@ class Motorbike extends Vehicle {
     ) { super();
           this.vin = vin;
           this.color = color;
+          this.make = make;
+          this.model = model;
+          this.year = year;
           this.weight = weight;
           this.topSpeed = topSpeed;
   

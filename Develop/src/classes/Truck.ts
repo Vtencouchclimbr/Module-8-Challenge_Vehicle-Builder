@@ -39,6 +39,9 @@ class Truck extends Vehicle implements AbleToTow {
   ) { super();
         this.vin = vin;
         this.color = color;
+        this.make = make;
+        this.model = model;
+        this.year = year;
         this.weight = weight;
         this.topSpeed = topSpeed;
         this.towingCapacity = towingCapacity;
@@ -71,6 +74,9 @@ class Truck extends Vehicle implements AbleToTow {
         super.printDetails();
         console.log(`VIN: ${this.vin}`);
         console.log(`Color: ${this.color}`);
+        console.log(`Make: ${this.make}`);
+        console.log(`Model: ${this.model}`);
+        console.log(`Year: ${this.year}`);
         console.log(`Weight: ${this.weight}`);
         console.log(`Top Speed: ${this.topSpeed}`);
         console.log(`Towing Capcity: ${this.towingCapacity}`);
