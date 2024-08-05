@@ -12,9 +12,9 @@ class Truck extends Vehicle implements AbleToTow {
   // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[]), towingCapacity (number)
   vin: string;
   color: string;
-  make?: string;
-  model?: string;
-  year?: number;
+  make: string;
+  model: string;
+  year: number;
   weight: number;
   topSpeed: number;
   wheels: Wheel[];
@@ -59,9 +59,9 @@ class Truck extends Vehicle implements AbleToTow {
       const { make, model, weight } = vehicle;
 
       if (weight <= this.towingCapacity) {
-        console.log(`${vehicle} is being towed`);
+        console.log(`${make} ${model} is being towed`);
       } else {
-        console.log(`${vehicle} is too heavy to be towed`);
+        console.log(`${make} ${model} is too heavy to be towed`);
       }
     }
   }
