@@ -52,7 +52,8 @@ After installing and starting the application, you'll use the command-line inter
 ## Tests
 Currently, there are no automated tests included in this project. Please ensure to manually test the application to verify its functionality.
 
-
+## Video
+[Link to video](https://drive.google.com/file/d/1n38ftaeTYRJ7Sq8KBSXwSD5pTH8UA_dX/view)
 
 ## Questions
 If you have any questions, please reach out to me:
